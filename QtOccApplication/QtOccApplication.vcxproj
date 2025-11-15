@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{60A2E8FA-60A2-4804-AF11-EB4ED0809BED}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>5.14.2_msvc2017_64</QtInstall>
+    <QtModules>core;gui;opengl;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>5.14.2_msvc2017_64</QtInstall>
+    <QtModules>core;gui;opengl;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+    <Import Project="..\..\..\opencascade-7.7.0\opencascade-7.7.0-vc14-64\opencascade-debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+    <Import Project="..\..\..\opencascade-7.7.0\opencascade-7.7.0-vc14-64\opencascade7.7.0.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <IncludePath>F:\SARibbon\SARibbon-v2.2.7\SARibbon-v2.2.7\bin_qt5.14.2_MSVC_x64\include\SARibbonBar;F:\SARibbon\SARibbon-v2.2.7\SARibbon-v2.2.7\src\SARibbonBar;F:\SARibbon\SARibbon-v2.2.7\SARibbon-v2.2.7\src;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\SARibbon\SARibbon-v2.2.7\SARibbon-v2.2.7\src\SARibbonBar;F:\SARibbon\SARibbon-v2.2.7\SARibbon-v2.2.7\bin_qt5.14.2_MSVC_x64\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalDependencies>SARibbonBard.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(Qt_INCLUDEPATH_);$(ProjectDir)inc;</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SARibbonBar_amalgamate\SARibbon.cpp" />
+    <ClCompile Include="src\CSG\CsgBooleanOpt.cpp" />
+    <ClCompile Include="src\CSG\CsgCubeDesign.cpp" />
+    <ClCompile Include="src\CSG\CsgCylinderBodyDesign.cpp" />
+    <ClCompile Include="src\CSG\CsgCylinderDesign.cpp" />
+    <ClCompile Include="src\CSG\CsgSphereDesign.cpp" />
+    <ClCompile Include="src\Feature\FeaChamferOpt.cpp" />
+    <ClCompile Include="src\Feature\FeaCircleArrayOpt.cpp" />
+    <ClCompile Include="src\Feature\FeaExcisionOpt.cpp" />
+    <ClCompile Include="src\Feature\FeaFilletOpt.cpp" />
+    <ClCompile Include="src\Feature\FeaRotateOpt.cpp" />
+    <ClCompile Include="src\Feature\FeaStretchingOpt.cpp" />
+    <ClCompile Include="src\OCCModeling.cpp" />
+    <ClCompile Include="src\QtOccApplication.cpp" />
+    <ClCompile Include="src\Stre\Stre3DRectDesign.cpp" />
+    <ClCompile Include="src\Stre\StreCircleDesign.cpp" />
+    <ClCompile Include="src\Stre\StreRectDesign.cpp" />
+    <ClCompile Include="src\SubC3dWidget.cpp" />
+    <QtRcc Include="QtOccApplication.qrc" />
+    <QtRcc Include="SARibbonBar_amalgamate\SARibbonBar\resource.qrc" />
+    <QtUic Include="ui\SubC3dWidget.ui" />
+    <QtUic Include="ui\CsgBooleanOpt.ui" />
+    <QtUic Include="ui\CsgCubeDesign.ui" />
+    <QtUic Include="ui\CsgCylinderBodyDesign.ui" />
+    <QtUic Include="ui\CsgCylinderDesign.ui" />
+    <QtUic Include="ui\CsgSphereDesign.ui" />
+    <QtUic Include="ui\FeaChamferOpt.ui" />
+    <QtUic Include="ui\FeaCircleArrayOpt.ui" />
+    <QtUic Include="ui\FeaExcisionOpt.ui" />
+    <QtUic Include="ui\FeaFilletOpt.ui" />
+    <QtUic Include="ui\FeaRotateOpt.ui" />
+    <QtUic Include="ui\FeaStretchingOpt.ui" />
+    <QtUic Include="ui\QtOccApplication.ui" />
+    <QtUic Include="ui\Stre3DRectDesign.ui" />
+    <QtUic Include="ui\StreCircleDesign.ui" />
+    <QtUic Include="ui\StreRectDesign.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SARibbonBar_amalgamate\SARibbon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+    <None Include="icon\3dstre.svg" />
+    <None Include="icon\action.svg" />
+    <None Include="icon\adaptview.svg" />
+    <None Include="icon\arced.svg" />
+    <None Include="icon\boolean opt.svg" />
+    <None Include="icon\circle array.svg" />
+    <None Include="icon\circle.svg" />
+    <None Include="icon\connect.svg" />
+    <None Include="icon\cube.svg" />
+    <None Include="icon\customize0.svg" />
+    <None Include="icon\cutting.svg" />
+    <None Include="icon\cylinder body.svg" />
+    <None Include="icon\cylinder.svg" />
+    <None Include="icon\delete.svg" />
+    <None Include="icon\excision.svg" />
+    <None Include="icon\file.svg" />
+    <None Include="icon\folder-star.svg" />
+    <None Include="icon\item.svg" />
+    <None Include="icon\line.svg" />
+    <None Include="icon\logo.svg" />
+    <None Include="icon\makechamfer.svg" />
+    <None Include="icon\makefillet.svg" />
+    <None Include="icon\mirror.svg" />
+    <None Include="icon\pillage.svg" />
+    <None Include="icon\rectangle.svg" />
+    <None Include="icon\rectangular array.svg" />
+    <None Include="icon\rotate.svg" />
+    <None Include="icon\SA.svg" />
+    <None Include="icon\save.svg" />
+    <None Include="icon\sphere.svg" />
+    <None Include="icon\stretching.svg" />
+    <None Include="icon\test1.svg" />
+    <None Include="icon\toEntity.svg" />
+    <None Include="icon\transfer.svg" />
+    <None Include="QtOccApplication.aps" />
+    <None Include="SARibbonBar_amalgamate\SARibbon.pri" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="inc\CSG\CsgBooleanOpt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="inc\CSG\CsgCubeDesign.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="inc\CSG\CsgCylinderBodyDesign.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="inc\CSG\CsgCylinderDesign.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="inc\CSG\CsgSphereDesign.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="inc\Feature\FeaChamferOpt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="inc\Feature\FeaCircleArrayOpt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="inc\Feature\FeaExcisionOpt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="inc\Feature\FeaFilletOpt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="inc\Feature\FeaRotateOpt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="inc\Feature\FeaStretchingOpt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\OCCModeling.h" />
+    <ClInclude Include="inc\resource.h" />
+    <QtMoc Include="inc\Stre\Stre3DRectDesign.h" />
+    <QtMoc Include="inc\SubC3dWidget.h" />
+    <QtMoc Include="inc\Stre\StreRectDesign.h" />
+    <QtMoc Include="inc\Stre\StreCircleDesign.h" />
+    <QtMoc Include="inc\QtOccApplication.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

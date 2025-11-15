@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtOccApplicationClass</class>
+ <widget class="QMainWindow" name="QtOccApplicationClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1028</width>
+    <height>934</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OCC三维建模平台</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>OCC三维建模平台</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="windowTitle">
+    <string>建模状态窗口</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QTreeWidget" name="treeWidget">
+       <column>
+        <property name="text">
+         <string>模型设计树</string>
+        </property>
+       </column>
+       <item>
+        <property name="text">
+         <string>实体</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>立方体1</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>草图</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>圆形1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>圆形2</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>特征</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>拉伸1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>切除</string>
+         </property>
+        </item>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="QtOccApplication.qrc"/>
+ </resources>
+ <connections/>
+</ui>

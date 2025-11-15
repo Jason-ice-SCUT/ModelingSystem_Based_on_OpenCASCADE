@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/QtOccApplication">
+        <file>icon/action.svg</file>
+        <file>icon/customize0.svg</file>
+        <file>icon/folder-star.svg</file>
+        <file>icon/item.svg</file>
+        <file>icon/SA.svg</file>
+        <file>icon/save.svg</file>
+        <file>icon/test1.svg</file>
+        <file>icon/cube.svg</file>
+        <file>icon/cylinder body.svg</file>
+        <file>icon/cylinder.svg</file>
+        <file>icon/sphere.svg</file>
+        <file>icon/delete.svg</file>
+        <file>icon/boolean opt.svg</file>
+        <file>icon/rectangle.svg</file>
+        <file>icon/arced.svg</file>
+        <file>icon/circle array.svg</file>
+        <file>icon/circle.svg</file>
+        <file>icon/connect.svg</file>
+        <file>icon/cutting.svg</file>
+        <file>icon/excision.svg</file>
+        <file>icon/line.svg</file>
+        <file>icon/makechamfer.svg</file>
+        <file>icon/makefillet.svg</file>
+        <file>icon/mirror.svg</file>
+        <file>icon/pillage.svg</file>
+        <file>icon/rectangular array.svg</file>
+        <file>icon/rotate.svg</file>
+        <file>icon/stretching.svg</file>
+        <file>icon/transfer.svg</file>
+        <file>icon/logo.svg</file>
+        <file>icon/file.svg</file>
+        <file>icon/toEntity.svg</file>
+        <file>icon/3dstre.svg</file>
+        <file>icon/adaptview.svg</file>
+    </qresource>
+</RCC>

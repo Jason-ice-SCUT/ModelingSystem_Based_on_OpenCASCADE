@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="QtOccApplication.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="SARibbonBar_amalgamate\SARibbonBar\resource.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SARibbonBar_amalgamate\SARibbon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OCCModeling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\QtOccApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SubC3dWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CSG\CsgBooleanOpt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CSG\CsgCubeDesign.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CSG\CsgCylinderBodyDesign.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CSG\CsgCylinderDesign.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CSG\CsgSphereDesign.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Feature\FeaChamferOpt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Feature\FeaCircleArrayOpt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Feature\FeaExcisionOpt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Feature\FeaFilletOpt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Feature\FeaRotateOpt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Feature\FeaStretchingOpt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Stre\Stre3DRectDesign.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Stre\StreCircleDesign.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Stre\StreRectDesign.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SARibbonBar_amalgamate\SARibbon.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\QtOccApplication.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\SubC3dWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\CSG\CsgBooleanOpt.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\CSG\CsgCubeDesign.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\CSG\CsgCylinderBodyDesign.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\CSG\CsgCylinderDesign.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\CSG\CsgSphereDesign.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\Feature\FeaChamferOpt.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\Feature\FeaCircleArrayOpt.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\Feature\FeaExcisionOpt.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\Feature\FeaFilletOpt.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\Feature\FeaRotateOpt.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\Feature\FeaStretchingOpt.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\Stre\Stre3DRectDesign.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\Stre\StreCircleDesign.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="inc\Stre\StreRectDesign.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SARibbonBar_amalgamate\SARibbon.pri" />
+    <None Include="QtOccApplication.aps" />
+    <None Include="cpp.hint" />
+    <None Include="icon\3dstre.svg" />
+    <None Include="icon\action.svg" />
+    <None Include="icon\adaptview.svg" />
+    <None Include="icon\arced.svg" />
+    <None Include="icon\boolean opt.svg" />
+    <None Include="icon\circle array.svg" />
+    <None Include="icon\circle.svg" />
+    <None Include="icon\connect.svg" />
+    <None Include="icon\cube.svg" />
+    <None Include="icon\customize0.svg" />
+    <None Include="icon\cutting.svg" />
+    <None Include="icon\cylinder body.svg" />
+    <None Include="icon\cylinder.svg" />
+    <None Include="icon\delete.svg" />
+    <None Include="icon\excision.svg" />
+    <None Include="icon\file.svg" />
+    <None Include="icon\folder-star.svg" />
+    <None Include="icon\item.svg" />
+    <None Include="icon\line.svg" />
+    <None Include="icon\logo.svg" />
+    <None Include="icon\makechamfer.svg" />
+    <None Include="icon\makefillet.svg" />
+    <None Include="icon\mirror.svg" />
+    <None Include="icon\pillage.svg" />
+    <None Include="icon\rectangle.svg" />
+    <None Include="icon\rectangular array.svg" />
+    <None Include="icon\rotate.svg" />
+    <None Include="icon\SA.svg" />
+    <None Include="icon\save.svg" />
+    <None Include="icon\sphere.svg" />
+    <None Include="icon\stretching.svg" />
+    <None Include="icon\test1.svg" />
+    <None Include="icon\toEntity.svg" />
+    <None Include="icon\transfer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="ui\QtOccApplication.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\SubC3dWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\CsgBooleanOpt.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\CsgCubeDesign.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\CsgCylinderBodyDesign.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\CsgCylinderDesign.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\CsgSphereDesign.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\FeaChamferOpt.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\FeaCircleArrayOpt.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\FeaExcisionOpt.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\FeaFilletOpt.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\FeaRotateOpt.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\FeaStretchingOpt.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\Stre3DRectDesign.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\StreCircleDesign.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\StreRectDesign.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\OCCModeling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

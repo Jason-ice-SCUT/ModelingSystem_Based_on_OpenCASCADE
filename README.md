@@ -6,7 +6,8 @@ A 3D modeling system based on OpenCASCADE and Qt, supporting CAD file reading, g
 ## Project Overview
 
 This project combines the OpenCASCADE geometric engine with the Qt framework to implement a lightweight 3D modeling system. It supports reading mainstream CAD file formats such as STEP/IGES, provides core functions including basic geometry creation (cubes, cylinders, cones, etc.), Boolean operations, and feature operations (extrusion, revolution, pattern, etc.), and realizes interactive operations through a Qt interface.
-![Interface](界面.png)
+
+<img src="界面.png" alt="Interface" width="600">
 
 ## Features
 
@@ -20,7 +21,8 @@ This project combines the OpenCASCADE geometric engine with the Qt framework to 
    - Fillet, chamfer
    - Mirroring, translation, circular pattern, linear pattern
 5. **Interactive Interface**: Ribbon-style interface based on Qt and SARibbonBar, supporting parametric design
-![Boolean Operations](jiao2.png)
+
+<img src="jiao2.png" alt="Boolean Operations" width="600">
 
 ## Environment Requirements
 
